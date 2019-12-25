@@ -1,43 +1,39 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 4: Applying Unsupervised Learning Algorithms
+# Introduction
 
-### Description
+Books are valuble materials for humans. Throughout history, the books industry has evolved from hand written books, to mechanical typing machines, and now to the age of electronic, and audio books. Amazon, Google and many other companies are investing in this field. As the books industry evolved, the number of books has increased dramatically giving the readers very wide variaty of books materials and many options. However, this also put the readers in so much confusion.
 
-Thanks to work done on project 3 from all of you, we now have over 31 unique published kaggle datasets. In this project, you will have opportunity to work on one dataset from your class's datasets, including define a problem statement, an extensive outline of EDA and modeling to date, the goal of your predictive model.
+# Problem Statment
+
+To make it easier for readers it is very important to classify the books accuratly depending on thier content. Each single book must be labeled according to the title and the description of the book. This process of assigning books to different generes when done manually, can be very tidues, time consuming and costy. <br>
+    
+Machine Learning with the aid of Natural Language Processing (NLP), can help automating this process and thus, saving the companies both time and money.
+
+In this project our aim is to design a classifier that can assign genere to each book, given their title and description. NLP would be used to process the title and the description of each book before using a Naive Bayes classifier to classify the books.
 
 
-The goal of this project is applying **unsupervised learning algorithms**, or **Time Series models** or you can build a **recommendation system** or **NLP**.
+# Data Descreption
 
----
+|Feature|Type|Description|
+|---|---|---|
+|title|object|The title of the book|,
+|author|object|The author of the book|,
+|rating|float|The rating of the book by the customers|,
+|voters|int|The number of customers who voted|,
+|price|float|The book price on Google store|,
+|currency|object|The currency in which the price is reported|,
+|description|object|A breif description of the book given in the store|,
+|publisher|object|The publisher of the book|,
+|page_count|int|The number of pages of the book|,
+|generes|object|The generes under which the book is catogrized|,
+|ISBN|object|the unique identification of each book|
+|language|object|The language in which the book is written|
+|published_date|object|The date at which the book was published|
 
-### Requirements
 
-- Select a dataset from the following datasets:
-  1. [riyadh-villas-dataset](https://www.kaggle.com/mohammadqahtani/riyadh-villas-dataset).
-  2. [condos-for-rent-in-riyadh](https://www.kaggle.com/abrar2safar/condos-for-rent-in-riyadh)
-  3. [movie-dataset ](https://www.kaggle.com/isbader/movie-dataset)
-  4. [glasgow-weather](https://www.kaggle.com/phyamal/glasgow-weather-data-20152019)
-  5. [spoonacular-food-dataset](https://www.kaggle.com/hawkash/spoonacular-food-dataset)
-  6. [google-books-dataset](https://www.kaggle.com/bilalyussef/google-books-dataset)
-  7. [riyadhseasontweet](https://www.kaggle.com/basmaho/riyadhseasontweet)
-  8. [trending-youtube-video](https://www.kaggle.com/bodoral/trending-youtube-video)
-  9. [foursquare-venues-riyadh](https://www.kaggle.com/mzoonalwalmani/foursquare-venues-riyadh)
-  10. [arabic-news-from-sabq-website](https://www.kaggle.com/abdulrahmanals/arabic-news-from-sabq-website)
-  11. [sayarah](https://www.kaggle.com/sumaiah/sayarah)
-  
-- Describe selected dataset thoroughly.
-- Define an issue or a problem that you are trying to solve.
-- Clean and prepare your data.
-- Perform methods of exploratory data analysis including some visualizations.
-- Apply one of these models:
-  1. Unsupervised learning algorithms.
-  2. Time Series models.
-  3. Recommendation system.
-  4. supervised learning algorithms with NLP.
+# Conclusion & Recommendation
 
----
-
-### Submission
-
-- The link to the repo which includes:
-  1. Readme contains a brief about your selected dataset and the defined problem.
-  2. Script for your EDA and model.
+- In this project a classification model was developed using NLP analysis and Naieve Bayes Models.
+- The best Accuracy found was 0.7427385892116183 for the test and 0.8708333333333333 for train data. 
+- The score can be enhanced with more data.
+- We recommend that more books be scraped from google books store to achieve higher accuracy for the model.
+- It is also recommewnded to build a recommender system and use the NLP analysis to help enhancing the recommendations accuracy.
